@@ -1,0 +1,55 @@
+@import '/src/Styles/variables.scss';
+
+.box__banner__container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 140px auto 0 auto;
+
+
+    .box__icons{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+
+        .icon__banner{
+            color: $white;
+            font-size: 2rem;
+            padding: 10px; 
+            border: 2px solid $white;
+            border-radius: 50%;
+            transition: all 1s;
+
+            &:hover{
+                background-color: $yellow;
+                border-color: $yellow;
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .box__titles{
+        text-align: center;
+        width: 60%;
+
+        h1{
+            color: $white;
+            font-family: $font-family-subtitle;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $font-size-subtitle;
+            line-height: 23px;
+        }
+
+        h2{
+            color: $white;
+            font-family: $font-family-title;
+            font-size: $font-size-title;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 3rem;
+        }
+    }
+}
