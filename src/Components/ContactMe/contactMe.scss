@@ -1,0 +1,21 @@
+@import '/src/Styles/variables.scss';
+
+.box__contactme__container{
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    $bg-image-contact;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
+    margin: 200px auto;
+    padding: 45px;
+    width: 60%;
+
+    .box__contactme__button{
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+@import '/src/Styles/variables.scss';
+
+.box__footer__container{
+    background-color: $grey;
+    height: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    
+    & > div{
+        margin: auto;
+    }
+
+
+    .box__footer__icons{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    
+        .icon__banner{
+            border: 2px solid $white;
+            border-radius: 50%;
+            color: $white;
+            font-size: 2rem;
+            padding: 10px; 
+            transition: 1s;
+    
+            &:hover{
+                background-color: $yellow;
+                border-color: $yellow;
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

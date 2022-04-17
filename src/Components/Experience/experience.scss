@@ -1,0 +1,9 @@
+@import '/src/Styles/variables.scss';
+
+.box__experience__data{
+    // background-color: red;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 95%;
+}

@@ -1,8 +1,102 @@
-@import 'variables.scss';
+@import '/src/Styles/variables.scss';
 
 body {
   margin: 0;
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $white;
+}
+
+h2{
+    font-family: $font-family-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 20px;
+}
+
+p{
+  font-family: $font-family-subtitle;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.container{
+  margin: auto 2%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    margin: auto 32px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container{
+    margin: auto 64px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    margin: auto 118px;
+  }
+}
+
+/*Buttons*/
+.btn{
+  color: $white;
+  font-size: 14px;
+  font-family: $font-family-subtitle;
+  font-weight: bold;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.btn__transparent{
+  border-radius: 10px;
+  border: 2px solid $white;
+  background-color: rgba(0,0,0,0);
+  transition: 0.25s;
+
+  &:hover, &:focus{
+    box-shadow: inset 0 0 0 2em $yellow;
+    border-color: $yellow;
+    border-radius: 0;
+    color: $dark;
+    transition: 0.25s;
+  }
+}
+
+.btn__yellow{
+  background-color: $yellow;
+  border: 2px solid $yellow;
+  color: $dark;
+  transition: 0.25s;
+
+  &:hover, &:focus{
+    background-color: rgba(0,0,0,0);
+    border-color: $white;
+    border-radius: 10px;
+    color: $white;
+    transition: 0.25s;
+  }
+}
+
+/*Anclas generales*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Divisor*/
+hr {
+  background-color: #DFAC13; 
+  border: none;
+  height: 1px;
 }

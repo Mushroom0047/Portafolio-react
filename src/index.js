@@ -10,6 +10,4 @@ root.render(
     <Home />
   </React.StrictMode>
 );
-
-
 reportWebVitals();
