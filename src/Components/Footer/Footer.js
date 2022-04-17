@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import '../Footer/footer.scss';
-import whiteLogo from '../../img/logo/2.png';
+import whiteLogo from '../../img/logo/5.png';
 
 const Footer = () => {
     const rrssLinks = {
@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className='box__footer__container'>
         <div className='box__footer__logo'>
-            <img alt='' src={whiteLogo}/>
+            <img alt='logotipo' src={whiteLogo}/>
         </div>
         <div className='box__footer__icons'>
             <a href={rrssLinks.ig}><FontAwesomeIcon icon={faInstagram} className='icon__banner'/></a>

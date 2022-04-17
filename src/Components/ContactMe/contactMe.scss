@@ -1,7 +1,6 @@
 @import '/src/Styles/variables.scss';
 
 .box__contactme__container{
-    justify-content: space-between;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     $bg-image-contact;
     background-size: cover;
@@ -11,6 +10,7 @@
     display: flex;
     flex-flow: column nowrap;
     height: 300px;
+    justify-content: space-between;
     margin: 200px auto;
     padding: 45px;
     width: 60%;

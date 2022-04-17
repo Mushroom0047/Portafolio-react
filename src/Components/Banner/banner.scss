@@ -1,26 +1,25 @@
 @import '/src/Styles/variables.scss';
 
 .box__banner__container{
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     gap: 5px;
     justify-content: center;
-    align-items: center;
-    width: 60%;
     margin: 140px auto 200px auto;
-
-
+    width: 60%;
+   
     .box__icons{
         display: flex;
         justify-content: space-around;
         width: 40%;
 
         .icon__banner{
+            border: 2px solid $white;
+            border-radius: 50%;
             color: $white;
             font-size: 2rem;
             padding: 10px; 
-            border: 2px solid $white;
-            border-radius: 50%;
             transition: 1s;
 
             &:hover{

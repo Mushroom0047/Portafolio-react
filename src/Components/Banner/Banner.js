@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Banner/banner.scss'
+import Proptypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
@@ -26,4 +27,10 @@ import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg
     </div>
   )
 }
+Banner.propTypes = {
+  title: Proptypes.string.isRequired,
+  subtitle: Proptypes.string
+}
+
+
 export default Banner
