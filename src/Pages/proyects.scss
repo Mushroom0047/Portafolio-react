@@ -1,0 +1,12 @@
+@import '/src/Styles/variables.scss';
+
+.box__proyect__text{
+    width: 50%;
+    margin: 200px 5% 0px 5%;
+}
+.box__proyect__webs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}

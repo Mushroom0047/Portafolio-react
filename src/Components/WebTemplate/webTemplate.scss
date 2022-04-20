@@ -1,0 +1,36 @@
+@import '/src/Styles/variables.scss';
+
+.box__web__container{
+    border: 2px solid $yellow;
+    border-radius: 15px;
+    height: 500px;
+    margin: .5%;
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 5px;
+    
+    .box__web__image{
+        height: 300px;
+        overflow-y: scroll;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            width: 5px;     
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $yellow;
+            border-radius: 4px;
+        }       
+        
+        img{
+            border-radius: 15px;
+            height: auto;
+            width: 100%;
+            
+        }
+    }
+    .box__web__description{
+        text-align: center;
+    }
+}
