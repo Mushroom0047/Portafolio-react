@@ -1,0 +1,38 @@
+@import '/src/Styles/variables.scss';
+
+.box__project__text{
+    width: 60%;
+    margin: 200px 5% 0px 5%;
+}
+.box__project__webs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 80px 0px 0px 0px;
+}
+.box__project__button__load{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.box__project__games{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 100px auto;
+    width: 90%;
+
+    .box__project__games__text{
+        width: 50%;
+        margin: 0px 0px 50px 0px;
+    }
+    .box__project__games__itchio{
+        margin: auto;
+        width: 90%;
+
+        iframe{
+            width: 100%;
+        }
+    }
+}

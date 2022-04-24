@@ -19,61 +19,61 @@ const data = [
       img: img0
     },
     {
-      name: 'eppSeguridad',
+      name: 'Epp Seguridad',
       link: 'https://eppseguridad.cl/',
       desc: 'Modificación de diseño en Prestashop',
       img: img1
     },
     {
-      name: 'isuda',
+      name: 'ISudamericana',
       link: 'https://isudamericana.cl/',
       desc: 'Sitio web desarrollado con Wordpress, Elementor y Woocommerce',
       img: img2
     },
     {
-      name: 'estacionLastarria',
+      name: 'Estación Lastarria',
       link: 'https://estacionlastarria.cl/',
       desc: 'Sitio web desarrollado con Wordpress, Elementor y Woocommerce',
       img: img3
     },
     {
-      name: 'linnaDem',
+      name: 'linna-Dem',
       link: 'https://linna-dem.cl/',
       desc: 'Portafolio de ilustración tipo Landing page desarrollado con Wordpress y Elementor',
       img: img4
     },
     {
-      name: 'miamiUnclic',
+      name: 'MiamiUnclic',
       link: 'https://www.miamiunclic.cl/',
       desc: 'Tienda e-commerce desarrollada con Wordpress, Elementor y Woocommerce',
       img: img5
     },
     {
-      name: 'necesitoWeb',
+      name: 'Necesito Web',
       link: 'https://necesitoweb.cl/',
       desc: 'Tienda de productos virtuales desarrollada con Wordpress y Elementor, Woocommerce',
       img: img6
     },
     {
-      name: 'refuerzaMas',
+      name: 'Refuerza Más',
       link: 'https://refuerzamas.cl/',
       desc: 'Sitio web desarrollado con Wordpress y Elementor',
       img: img7
     },
     {
-      name: 'sinDeudas',
+      name: 'Sin Deudas',
       link: 'https://sindeudas.cl/',
       desc: 'Sitio web desarrollado con Wordpress y Elementor',
       img: img8
     },
     {
-      name: 'cellzion',
+      name: 'Cellzion',
       link: 'https://cellzion.cl/',
       desc: 'Modificación de diseño en sitio web desarrollado con Odoo',
       img: img9
     },
     {
-      name: 'quntur',
+      name: 'Quntur',
       link: 'https://cellzion.cl/',
       desc: 'modificación de diseño y Blog en sitio desarrollado con Wordpress y Elementor',
       img: img10

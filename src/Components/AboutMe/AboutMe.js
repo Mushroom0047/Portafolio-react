@@ -30,7 +30,7 @@ const arrExp = ['Planificación de desarrollo web.',
      
   return (
       <div className='box__container container'>
-        <div className='box__aboutMe'>
+        <div className='box__aboutMe' id='About'>
             <h2>Sobre Mí</h2>
             <p>
                 ¡Hola! Me llamo Héctor y soy Analista programador egresado 
