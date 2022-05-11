@@ -1,18 +1,19 @@
 @import '/src/Styles/variables.scss';
 
 .box__navmenu__container{
+    align-items: center;
     background-color: $yellow;
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
-    align-items: center;
+    width: 100%;
 
     .box__navmenu__logo{
         width: 30%;
         img{
             max-width: 100%;
             height: 60px;
-            padding-left: 15px;        
+            padding: 10px 15px;        
         }
     }
     .box__navmenu__buttons{
@@ -49,4 +50,19 @@
             }
         }
     }
+    .box__menu__icon{
+        display: none;
+    }
+}
+
+/*Rsponsive*/
+@media only screen and (max-width: 768px) {
+    .box__navmenu__buttons{
+        display: none;
+    }
+
+    .box__navmenu__buttons__mobile{
+        background-color: red;
+    }
+
 }
