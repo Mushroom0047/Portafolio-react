@@ -2,7 +2,9 @@ import React from 'react';
 import '../AboutMe/aboutMe.scss'
 import Experience from '../Experience/Experience';
 import imgProfile from '../../img/myPhoto.jpeg';
-import sparkImg from '../../img/SparkAR.png'
+import sparkImg from '../../img/SparkAR.png';
+import { Col, Container, Row } from 'react-bootstrap';
+
 
 const knowledgeIcons = {
     html: 'https://img.icons8.com/color/96/000000/html-5--v1.png',
@@ -29,8 +31,69 @@ const arrExp = ['Planificación de desarrollo web.',
  const AboutMe = () => {
      
   return (
-      <div className='box__container container'>
-        <div className='box__aboutMe' id='About'>
+      <Container className='box__aboutMe' id='About'>
+          <Row>
+              <Col>
+                <h2>Sobre Mí</h2>
+                <hr/>
+                <p>
+                    ¡Hola! Me llamo Héctor y soy Analista programador egresado 
+                    de Inacap. Soy una persona organizada, dedicada y responsable, 
+                    con muchas metas cumplidas y muchas más por cumplir.
+                    Me considero una persona amigable, comprensiva, creativa, y 
+                    creo que para todo hay tiempo. Mi Hobby son los videojuegos 
+                    independientes, también me encanta dibujar y tocar guitarra eléctrica.
+                </p>
+                <div className='box__knowledge'>
+                    <h2>Conocimientos</h2>
+                    <p>
+                        Constantemente estoy estudiando de manera autodidacta en la plataforma Udemy, 
+                        actualmente me encuentro realizando un curso de React y he 
+                        realizado diversos cursos de diseño de videojuegos y desarrollo 
+                        Frontend con HTML, CSS y JavaScript. Conozco sobre metodologías 
+                        ágiles de desarrollo, patrones de arquitectura de software, 
+                        desarrollo de aplicaciones de escritorio y móviles. Hasta ahora 
+                        las tecnologías que manejo son las siguientes:
+                    </p>
+
+                    <div className='box__knowledge__icons'>
+                        <img alt='html logo'src={knowledgeIcons.html} />
+                        <img alt='css logo'src={knowledgeIcons.css} />
+                        <img alt='js logo'src={knowledgeIcons.js} />
+                        <img alt='html logo'src={knowledgeIcons.wordpress} />
+                        <img alt='html logo'src={knowledgeIcons.bootstrap} />
+                        <img alt='html logo'src={knowledgeIcons.sass} />
+                        <img alt='html logo'src={knowledgeIcons.csharp} />
+                        <img alt='html logo'src={knowledgeIcons.java} />
+                        <img alt='html logo'src={knowledgeIcons.mysql} />
+                        <img alt='html logo'src={knowledgeIcons.android} />
+                        <img alt='html logo'src={knowledgeIcons.git} />
+                        <img alt='html logo'src={knowledgeIcons.gameMaker} />
+                        <img alt='html logo'src={knowledgeIcons.unity} />
+                        <img alt='html logo'src={knowledgeIcons.sparkAr} />
+                        <img alt='html logo'src={knowledgeIcons.figma} />
+                    </div>        
+                </div>        
+              </Col>
+              <Col>
+                <div className='box__profileImage'>
+                    <img className='img-fluid' alt='profile' src={imgProfile} />
+                </div>
+
+                <div className='box__experience'>
+                    <Experience date='2022 - Actual' business='Grupo QS.' arrFunctions={arrExp}/>
+                    <hr/>
+                    <Experience date='2021 - 2022' business='DesignSeo.' arrFunctions={arrExp}/>
+                </div>
+              </Col>
+          </Row>
+      </Container>    
+  )
+}
+
+export default AboutMe;
+
+{/* <div className='box__aboutMe' id='About'>
             <h2>Sobre Mí</h2>
             <p>
                 ¡Hola! Me llamo Héctor y soy Analista programador egresado 
@@ -78,9 +141,4 @@ const arrExp = ['Planificación de desarrollo web.',
             <Experience date='2022 - Actual' business='Grupo QS.' arrFunctions={arrExp}/>
             <hr/>
             <Experience date='2021 - 2022' business='DesignSeo.' arrFunctions={arrExp}/>
-        </div>
-      </div>
-  )
-}
-
-export default AboutMe;
+        </div> */}

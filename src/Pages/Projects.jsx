@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <>
         <Header />
-        <Banner title='Proyectos'/>
+        <Banner title='Proyectos' subtitle='Algunas cosas en las que he trabajado'/>
         <GearAnim />
         <div className='box__project__text'>
         <h2>Páginas web</h2>

@@ -2,14 +2,17 @@
 
 .box__banner__container{
     align-items: center;
+    background-color: $grey;
     display: flex;
     flex-flow: column nowrap;
-    gap: 5px;
+    row-gap: 52px;
+    height: 800px;
     justify-content: center;
-    margin: 140px auto 0 auto;
-    width: 60%;
+    margin: 0 auto 0 auto;
+    width: 100%;
    
     .box__icons{
+        align-items: center;
         display: flex;
         justify-content: space-around;
         width: 40%;
@@ -31,7 +34,7 @@
     }
     .box__titles{
         text-align: center;
-        width: 60%;
+        width: 70%;
 
         h1{
             color: $white;

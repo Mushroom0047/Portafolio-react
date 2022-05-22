@@ -1,68 +1,25 @@
 @import '/src/Styles/variables.scss';
 
-.box__navmenu__container{
-    align-items: center;
+.div__navmenu__container{
     background-color: $yellow;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
     width: 100%;
 
-    .box__navmenu__logo{
-        width: 30%;
-        img{
-            max-width: 100%;
-            height: 60px;
-            padding: 10px 15px;        
+    // Logo mushroom
+    .div__navmenu__logo{
+        width: 52px;
+        height: auto;
+    }
+
+    .div__container__menu{
+        margin: 0 64px;
+    }
+
+    .nav__item {
+        font-weight: bold;
+    
+        &:hover{
+            background-color: $white;
+            color: $dark !important;
         }
     }
-    .box__navmenu__buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        width: 70%;
-        ul{
-            list-style-type: none;
-            padding-right: 10px;
-            
-            li{
-                float: left;
-
-                a{
-                    display: block;
-                    padding: 16px;
-                    font-family: $font-family-subtitle;
-                    font-weight: bold;
-                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-
-                :hover{
-                    background-color: $white;
-                    border-radius: 10px;
-                    color: $dark;
-                    text-shadow: none;
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-                
-                .navmenu__icon__user{
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-    .box__menu__icon{
-        display: none;
-    }
-}
-
-/*Rsponsive*/
-@media only screen and (max-width: 768px) {
-    .box__navmenu__buttons{
-        display: none;
-    }
-
-    .box__navmenu__buttons__mobile{
-        background-color: red;
-    }
-
 }

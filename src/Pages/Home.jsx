@@ -6,11 +6,12 @@ import Footer from '../Components/Footer/Footer';
 import Header from '../Components/Header/Header';
 
 
+
 const Home = () => {
   return (
     <>
       <Header />
-      <Banner title='Mi Nombre Es Héctor' subtitle='Frontend Developer'/>
+      <Banner staticTitle='Mi Nombre Es' title={['Héctor', 'MushrooM']} subtitle='Frontend Developer'/>
       <AboutMe />
       <ContactMe />
       <Footer />
