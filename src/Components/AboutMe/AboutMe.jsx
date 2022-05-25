@@ -2,27 +2,9 @@ import React from 'react';
 import '../AboutMe/aboutMe.scss'
 import Experience from '../Experience/Experience';
 import imgProfile from '../../img/myPhoto.jpeg';
-import sparkImg from '../../img/SparkAR.png';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Tooltip } from 'react-bootstrap';
+import ImagesKnow from './ImagesKnow';
 
-
-const knowledgeIcons = {
-    html: 'https://img.icons8.com/color/96/000000/html-5--v1.png',
-    css: 'https://img.icons8.com/color/96/000000/css3.png',
-    js: 'https://img.icons8.com/color/96/000000/javascript--v1.png',
-    wordpress: 'https://img.icons8.com/color/96/000000/wordpress.png',
-    bootstrap: 'https://img.icons8.com/color/96/000000/bootstrap.png',
-    sass: 'https://img.icons8.com/color/96/000000/sass.png',
-    csharp: 'https://img.icons8.com/color/96/000000/c-sharp-logo.png',
-    java: 'https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png',
-    mysql: 'https://img.icons8.com/color/96/000000/mysql-logo.png',
-    android: 'https://img.icons8.com/color/96/000000/android-os.png',
-    git: 'https://img.icons8.com/color/96/000000/git.png',
-    gameMaker: 'https://img.icons8.com/color/96/000000/game-maker.png',
-    unity: 'https://img.icons8.com/color/96/000000/unity.png',
-    sparkAr: sparkImg,
-    figma: 'https://img.icons8.com/color/48/000000/figma--v1.png'
-}
 
 const arrExp = ['Planificación de desarrollo web.', 
 'Desarrollo páginas en Wordpress con Elementor, Divi, wpBakery, entre otros.',
@@ -31,22 +13,25 @@ const arrExp = ['Planificación de desarrollo web.',
  const AboutMe = () => {
      
   return (
-      <Container className='box__aboutMe' id='About'>
+      <Container  className='box__aboutme mt-5' id='About'>
           <Row>
-              <Col>
-                <h2>Sobre Mí</h2>
-                <hr/>
-                <p>
-                    ¡Hola! Me llamo Héctor y soy Analista programador egresado 
-                    de Inacap. Soy una persona organizada, dedicada y responsable, 
-                    con muchas metas cumplidas y muchas más por cumplir.
-                    Me considero una persona amigable, comprensiva, creativa, y 
-                    creo que para todo hay tiempo. Mi Hobby son los videojuegos 
-                    independientes, también me encanta dibujar y tocar guitarra eléctrica.
-                </p>
-                <div className='box__knowledge'>
+              <Col md={6} sm={12}>
+                <div>
+                    <h2>Sobre Mí</h2>
+                    <hr/>
+                    <p className='text__desc'>
+                        ¡Hola! Me llamo Héctor y soy Analista programador egresado 
+                        de Inacap. Soy una persona organizada, dedicada y responsable, 
+                        con muchas metas cumplidas y muchas más por cumplir.
+                        Me considero una persona amigable, comprensiva, creativa, y 
+                        creo que para todo hay tiempo. Mi Hobby son los videojuegos 
+                        independientes, también me encanta dibujar y tocar guitarra eléctrica.
+                    </p>
+                </div>
+                <div className='box__knowledge mt-5'>
                     <h2>Conocimientos</h2>
-                    <p>
+                    <hr/>
+                    <p className='text__desc'>
                         Constantemente estoy estudiando de manera autodidacta en la plataforma Udemy, 
                         actualmente me encuentro realizando un curso de React y he 
                         realizado diversos cursos de diseño de videojuegos y desarrollo 
@@ -56,31 +41,23 @@ const arrExp = ['Planificación de desarrollo web.',
                         las tecnologías que manejo son las siguientes:
                     </p>
 
-                    <div className='box__knowledge__icons'>
-                        <img alt='html logo'src={knowledgeIcons.html} />
-                        <img alt='css logo'src={knowledgeIcons.css} />
-                        <img alt='js logo'src={knowledgeIcons.js} />
-                        <img alt='html logo'src={knowledgeIcons.wordpress} />
-                        <img alt='html logo'src={knowledgeIcons.bootstrap} />
-                        <img alt='html logo'src={knowledgeIcons.sass} />
-                        <img alt='html logo'src={knowledgeIcons.csharp} />
-                        <img alt='html logo'src={knowledgeIcons.java} />
-                        <img alt='html logo'src={knowledgeIcons.mysql} />
-                        <img alt='html logo'src={knowledgeIcons.android} />
-                        <img alt='html logo'src={knowledgeIcons.git} />
-                        <img alt='html logo'src={knowledgeIcons.gameMaker} />
-                        <img alt='html logo'src={knowledgeIcons.unity} />
-                        <img alt='html logo'src={knowledgeIcons.sparkAr} />
-                        <img alt='html logo'src={knowledgeIcons.figma} />
+                    <div className='box__knowledge__icons mt-5'>
+                        <h2>Tecnologías que manejo</h2>
+                        <hr/>
+                        {/* Listado de imagenes */}
+                        <ImagesKnow />
+                        <Tooltip />
                     </div>        
                 </div>        
               </Col>
-              <Col>
+              <Col md={6} sm={12} >
                 <div className='box__profileImage'>
-                    <img className='img-fluid' alt='profile' src={imgProfile} />
+                    <img className='img-fluid rounded' alt='profile' src={imgProfile} />
                 </div>
 
-                <div className='box__experience'>
+                <div className='box__experience mt-2'>
+                    <h2>Experiencia</h2>
+                    <hr/>
                     <Experience date='2022 - Actual' business='Grupo QS.' arrFunctions={arrExp}/>
                     <hr/>
                     <Experience date='2021 - 2022' business='DesignSeo.' arrFunctions={arrExp}/>
@@ -92,53 +69,3 @@ const arrExp = ['Planificación de desarrollo web.',
 }
 
 export default AboutMe;
-
-{/* <div className='box__aboutMe' id='About'>
-            <h2>Sobre Mí</h2>
-            <p>
-                ¡Hola! Me llamo Héctor y soy Analista programador egresado 
-                de Inacap. Soy una persona organizada, dedicada y responsable, 
-                con muchas metas cumplidas y muchas más por cumplir.
-                Me considero una persona amigable, comprensiva, creativa, y 
-                creo que para todo hay tiempo. Mi Hobby son los videojuegos 
-                independientes, también me encanta dibujar y tocar guitarra eléctrica.
-            </p>
-        </div>
-        <div className='box__profileImage'>
-            <img alt='profile' src={imgProfile} />
-        </div>
-        <div className='box__knowledge'>
-            <h2>Conocimientos</h2>
-                <p>
-                    Constantemente estoy estudiando de manera autodidacta en la plataforma Udemy, 
-                    actualmente me encuentro realizando un curso de React y he 
-                    realizado diversos cursos de diseño de videojuegos y desarrollo 
-                    Frontend con HTML, CSS y JavaScript. Conozco sobre metodologías 
-                    ágiles de desarrollo, patrones de arquitectura de software, 
-                    desarrollo de aplicaciones de escritorio y móviles. Hasta ahora 
-                    las tecnologías que manejo son las siguientes:
-                </p>
-
-            <div className='box__knowledge__icons'>
-                <img alt='html logo'src={knowledgeIcons.html} />
-                <img alt='css logo'src={knowledgeIcons.css} />
-                <img alt='js logo'src={knowledgeIcons.js} />
-                <img alt='html logo'src={knowledgeIcons.wordpress} />
-                <img alt='html logo'src={knowledgeIcons.bootstrap} />
-                <img alt='html logo'src={knowledgeIcons.sass} />
-                <img alt='html logo'src={knowledgeIcons.csharp} />
-                <img alt='html logo'src={knowledgeIcons.java} />
-                <img alt='html logo'src={knowledgeIcons.mysql} />
-                <img alt='html logo'src={knowledgeIcons.android} />
-                <img alt='html logo'src={knowledgeIcons.git} />
-                <img alt='html logo'src={knowledgeIcons.gameMaker} />
-                <img alt='html logo'src={knowledgeIcons.unity} />
-                <img alt='html logo'src={knowledgeIcons.sparkAr} />
-                <img alt='html logo'src={knowledgeIcons.figma} />
-            </div>
-        </div>
-        <div className='box__experience'>
-            <Experience date='2022 - Actual' business='Grupo QS.' arrFunctions={arrExp}/>
-            <hr/>
-            <Experience date='2021 - 2022' business='DesignSeo.' arrFunctions={arrExp}/>
-        </div> */}

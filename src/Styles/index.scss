@@ -3,37 +3,21 @@
 
 
 body {
-  margin: 0;
   background-color: $background-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: $white;
 }
 
 h2{
     font-family: $font-family-title;
-    font-style: normal;
-    font-weight: 400;
     font-size: 2rem;
-    line-height: 20px;
 }
 
 p{
   font-family: $font-family-subtitle;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 20px;
-}
-/*Anclas generales*/
-a{
-  text-decoration: none;
-  color: inherit;
 }
 
 /*Divisor*/
 hr {
   background-color: $yellow; 
   border: none;
-  // height: 2px ;
 }

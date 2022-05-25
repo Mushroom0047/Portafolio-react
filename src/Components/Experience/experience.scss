@@ -1,9 +1,12 @@
 @import '/src/Styles/variables.scss';
 
 .box__experience__data{
+    background-color: $grey;   
+    border-radius: 5px;    
     display: flex;
     flex-flow: column wrap;
     font-family: $font-family-subtitle;
     justify-content: center;
+    padding: 15px;
     width: 95%;
 }
