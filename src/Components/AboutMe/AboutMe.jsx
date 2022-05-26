@@ -52,7 +52,7 @@ const arrExp = ['Planificación de desarrollo web.',
               </Col>
               <Col md={6} sm={12} >
                 <div className='box__profileImage'>
-                    <img className='img-fluid rounded' alt='profile' src={imgProfile} />
+                    <img className='img-fluid rounded my-5' alt='profile' src={imgProfile} />
                 </div>
 
                 <div className='box__experience mt-2'>

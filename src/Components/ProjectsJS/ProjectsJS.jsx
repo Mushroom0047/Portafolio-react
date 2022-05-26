@@ -1,20 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import '../../Components/ProjectsJS/projectsJS.scss'
 
 const ProjectsJS = () => {
+  const [showProjects, setShowProjects] = useState(false);
+
   return (
-    <div className='box__projectjs__container'>
-        <div className='box__projectjs__text__intro'>
-            <h2>Proyectos en JavaScript</h2>
-            <p>
-                En esta sección están los proyectos pequeños 
-                que hice para practicar JavaScript.
-            </p>
-        </div> 
-        <div className='box__project__button__show'>
-          <button className='btn btn__transparent' >Mostrar</button>
-        </div>
-    </div>
+    <>
+    <Container fluid className='box__projectjs__container'>
+      <Row>
+        <Col md={4} className='mt-5'>
+        <h2>Proyectos en JavaScript</h2>
+        <hr/>
+        <p>
+            En esta sección están los proyectos pequeños 
+            que hice para practicar JavaScript.
+        </p>
+        </Col>
+      </Row>
+      <Row >
+        <Col className='text-center'>
+          <Button variant='outline-light' onClick={()=>{setShowProjects(!showProjects)}}>MOSTRAR</Button>
+        </Col>
+      </Row>
+    </Container>
+    </>
   )
 }
 

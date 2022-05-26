@@ -1,5 +1,4 @@
 import React from 'react'
-import { Tooltip } from 'react-bootstrap';
 import data from './dataImageKnowledge';
 
 
@@ -7,8 +6,9 @@ const ImagesKnow = () => {
     let imgArr = [];
   return (
     <>
-    {imgArr = data.map(({toolTip, url, alt}) => {
+    {imgArr = data.map(({toolTip, url, alt}, index) => {
       return <img 
+        key={index}
         alt={alt}
         src={url}
         data-bs-toggle="tooltip" 

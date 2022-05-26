@@ -1,24 +1,12 @@
 @import '/src/Styles/variables.scss';
 
 .box__projectjs__container{
-    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     $bg-image-gear;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
-    flex-flow: column nowrap;
     height: 800px;
     justify-content: center;
-    margin:  200px auto 0px auto;
-    width: 100%;
-
-    .box__projectjs__text__intro{
-        width: 90%;
-    }
-    .box__project__button__show{
-        margin-top: 100px;
-    }
 }

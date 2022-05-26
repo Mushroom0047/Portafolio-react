@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import '../ContactMe/contactMe.scss';
 
 const ContactMe = () => {
@@ -10,7 +11,7 @@ const ContactMe = () => {
                 envíame un mensaje.</p>
         </div>
         <div className='box__contactme__button'>
-            <button className='btn btn__transparent'>Contacto</button>
+            <Button variant='outline-light' href='/Contact'>CONTACTO</Button>
         </div>
     </div>
   )

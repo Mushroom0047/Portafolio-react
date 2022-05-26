@@ -1,8 +1,9 @@
 @import '/src/Styles/variables.scss';
 
-.box__project__text{
-    width: 60%;
-    margin: 200px 5% 0px 5%;
+.text__desc{
+    background-color: $grey;   
+    padding: 15px;
+    border-radius: 5px;     
 }
 .box__project__webs{
     display: flex;
@@ -17,22 +18,16 @@
     padding: 30px 0;
 }
 
-.box__project__games{
+
+.box__project__games__itchio{
     display: flex;
     flex-flow: column nowrap;
     margin: 100px auto;
-    width: 90%;
-
-    .box__project__games__text{
-        width: 50%;
-        margin: 0px 0px 50px 0px;
-    }
-    .box__project__games__itchio{
-        margin: auto;
-        width: 90%;
-
-        iframe{
-            width: 100%;
-        }
+    
+    iframe{
+        width: 100%;
     }
 }
+
+
+    
