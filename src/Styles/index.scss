@@ -5,11 +5,15 @@
 body {
   background-color: $background-color;
   color: $white;
+  overflow-x: hidden;
 }
 
 h2{
     font-family: $font-family-title;
     font-size: 2rem;
+}
+h3{
+  font-family: $font-family-subtitle;
 }
 
 p{

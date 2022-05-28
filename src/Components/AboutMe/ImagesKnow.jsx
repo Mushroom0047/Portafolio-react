@@ -8,7 +8,7 @@ const ImagesKnow = () => {
     <>
     {imgArr = data.map(({toolTip, url, alt}, index) => {
       return <img 
-        key={index}
+        key={index.toString()}
         alt={alt}
         src={url}
         data-bs-toggle="tooltip" 

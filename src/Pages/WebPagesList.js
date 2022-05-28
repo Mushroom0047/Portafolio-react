@@ -10,19 +10,26 @@ import img7 from '../img/pages/refuerza.webp';
 import img8 from '../img/pages/sinDeudas.webp';
 import img9 from '../img/pages/cellzion.webp';
 import img10 from '../img/pages/quntur.webp';
+import img11 from '../img/pages/cantauria.webp';
 
 const data = [
+    {
+      name: 'Cantauria Estudio',
+      link: 'https://cantauriaestudio.cl/',
+      desc: 'Sitio web para estudio de tatuajes, desarrollado con Wordpress y Elementor',
+      img: img11
+    },
+    {
+      name: 'linna-Dem',
+      link: 'https://linna-dem.cl/',
+      desc: 'Portafolio de ilustración tipo Landing page desarrollado con Wordpress y Elementor',
+      img: img4
+    },
     {
       name: 'Armag',
       link: 'https://armag.cl/',
       desc: 'Sitio web cotizador desarrollado con Wordpress, Elementor y Woocommerce',
       img: img0
-    },
-    {
-      name: 'Epp Seguridad',
-      link: 'https://eppseguridad.cl/',
-      desc: 'Modificación de diseño en Prestashop',
-      img: img1
     },
     {
       name: 'ISudamericana',
@@ -35,12 +42,6 @@ const data = [
       link: 'https://estacionlastarria.cl/',
       desc: 'Sitio web desarrollado con Wordpress, Elementor y Woocommerce',
       img: img3
-    },
-    {
-      name: 'linna-Dem',
-      link: 'https://linna-dem.cl/',
-      desc: 'Portafolio de ilustración tipo Landing page desarrollado con Wordpress y Elementor',
-      img: img4
     },
     {
       name: 'MiamiUnclic',

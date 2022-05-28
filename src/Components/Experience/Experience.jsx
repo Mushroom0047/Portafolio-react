@@ -2,8 +2,8 @@ import React from 'react'
 import '../Experience/experience.scss';
 
 const Experience = ({date, business, arrFunctions}) => {
-  const listFunctions = arrFunctions.map((n) => 
-    <li key={n}>{n}</li>
+  const listFunctions = arrFunctions.map((n, index) => 
+    <li key={index.toString()}>{n}</li>
   );
   
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import '../WebTemplate/webTemplate.scss'
 
 const WebTemplate = ({title, description, img, link}) => {
@@ -9,9 +10,9 @@ const WebTemplate = ({title, description, img, link}) => {
             <img alt={title + 'site'} src={img}/>
         </div>
         <div className='box__web__description'>
-            <h2>{title}</h2>
+            <h3 className='mt-2'>{title}</h3>
             <p>{description}</p>
-            <button className='btn btn__yellow' type='button'><a href={link}>Ver Página</a></button>
+            <Button variant='warning' href={link}>Ver Página</Button>
         </div>      
     </div>
 

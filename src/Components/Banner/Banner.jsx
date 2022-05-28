@@ -29,10 +29,5 @@ const rrssLinks = {
     </Container>
   )
 }
-Banner.propTypes = {
-  title: Proptypes.array.isRequired,
-  subtitle: Proptypes.string
-}
-
 
 export default Banner

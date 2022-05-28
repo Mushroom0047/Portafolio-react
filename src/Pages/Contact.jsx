@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <Banner title='Contacto' subtitle='Si quieres saber más sobre mí o sobre mi trabajo, envíame un mensaje.'/>
+      <Banner title={['Contacto']} subtitle='Si quieres saber más sobre mí o sobre mi trabajo, envíame un mensaje.'/>
       <div className='box__form__container'>
         <div className='box__form__form'>
             <form>

@@ -1,5 +1,17 @@
 @import '/src/Styles/variables.scss';
 
+.box__projectjs__container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    $bg-image-gear;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    min-height: 400px;
+    justify-content: center;
+}
+
 .text__desc{
     background-color: $grey;   
     padding: 15px;
@@ -10,23 +22,6 @@
     flex-flow: row wrap;
     justify-content: center;
     margin: 80px 0px 0px 0px;
-}
-.box__project__button__load{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 30px 0;
-}
-
-
-.box__project__games__itchio{
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 100px auto;
-    
-    iframe{
-        width: 100%;
-    }
 }
 
 

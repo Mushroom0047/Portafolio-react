@@ -1,9 +1,26 @@
 import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import '../../Components/ProjectsJS/projectsJS.scss'
+import ProjectTemplate from './ProjectTemplate';
+import dataProjects from './DataProjects';
 
 const ProjectsJS = () => {
-  const [showProjects, setShowProjects] = useState(false);
+  //Fill items in projects js
+  let projects = dataProjects.map(({title, date, slugHash, desc}, index) => {
+    return <ProjectTemplate 
+    key={index.toString()}
+    title={title}
+    date={date}
+    desc={desc}
+    slugHash={slugHash}
+    /> 
+});
+
+    const [itemsP, setItemsP] = useState(projects);
+    const [visibleP, setVisibleP] = useState(0);
+    
+    const setMoreItems = () => {
+      setVisibleP((prevValue) => prevValue+1);
+    }
 
   return (
     <>
@@ -11,16 +28,22 @@ const ProjectsJS = () => {
       <Row>
         <Col md={4} className='mt-5'>
         <h2>Proyectos en JavaScript</h2>
-        <hr/>
         <p>
             En esta sección están los proyectos pequeños 
             que hice para practicar JavaScript.
         </p>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          {itemsP.slice(0, visibleP).map((item) => {
+                  return item;
+                })} 
+        </Col>
+      </Row>
       <Row >
         <Col className='text-center'>
-          <Button variant='outline-light' onClick={()=>{setShowProjects(!showProjects)}}>MOSTRAR</Button>
+          <Button variant='outline-light' onClick={setMoreItems} className='my-5'>MOSTRAR MÁS</Button>
         </Col>
       </Row>
     </Container>
