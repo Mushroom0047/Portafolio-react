@@ -3,10 +3,9 @@
 .box__web__container{
     border: 2px solid $yellow;
     border-radius: 15px;
-    height: 500px;
-    margin: .5%;
-    width: 30%;
+    min-height: 500px;
     max-width: 400px;
+    margin: 10px;
     padding: 5px;
     
     .box__web__image{
@@ -15,22 +14,19 @@
         width: 100%;
 
         &::-webkit-scrollbar {
-            width: 5px;     
+            width: 5px;             
         }
         &::-webkit-scrollbar-thumb {
             background-color: $yellow;
             border-radius: 4px;
-        }       
-        
+        }               
         img{
-            border-radius: 15px;
             height: auto;
-            width: 100%;
-            
+            width: 100%;            
         }
     }
     .box__web__description{
         text-align: left;
-        padding: 5px;
+        padding: 15px;
     }
 }

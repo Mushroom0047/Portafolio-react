@@ -26,7 +26,7 @@ const ProjectsJS = () => {
     <>
     <Container fluid className='box__projectjs__container'>
       <Row>
-        <Col md={4} className='mt-5'>
+        <Col xs={12} sm={12} md={6} lg={6} className='mt-5'>
         <h2>Proyectos en JavaScript</h2>
         <p>
             En esta sección están los proyectos pequeños 

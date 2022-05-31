@@ -46,7 +46,7 @@ const Projects = () => {
         {/* <GearAnim /> */}
         <Container className='mt-5'>
           <Row>
-            <Col md={6} >
+            <Col sm={12} md={12} lg={6}>
               <h2>Páginas web</h2>
               <hr/>
               <p className='text__desc'>
@@ -58,12 +58,10 @@ const Projects = () => {
               </p>
             </Col>          
           </Row>
-          <Row>
-            <Col className='box__project__webs' md={12}>        
+          <Row>                 
                 {items.slice(0, visible).map((item) => {
-                  return item;
-                })} 
-            </Col>
+                  return item;                 
+                })}         
             <Col className='text-center' md={12}>
                 <Button variant='outline-warning' onClick={setMoreItems} className='mt-3'>CARGAR MÁS</Button>            
             </Col>
@@ -78,7 +76,7 @@ const Projects = () => {
           </Container>
           <Container>
             <Row>          
-              <Col md={6} className='mt-5'>
+              <Col xs={12} sm={12} md={8} lg={6} className='mt-5'>
               <h2>Juegos desarrollados</h2>
               <hr/>
               <p className='text__desc'>
