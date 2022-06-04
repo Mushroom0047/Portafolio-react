@@ -1,5 +1,6 @@
 import sparkImg from '../../img/SparkAR.png';
 const urlname = 'https://img.icons8.com/color/96/000000/';
+const reactImg = 'https://img.icons8.com/color/96/undefined/react-native.png';
 
 const data = [
     {
@@ -76,6 +77,11 @@ const data = [
         toolTip: 'Spark AR',
         url: sparkImg,
         alt: 'spark ar image'
+    },
+    {
+        toolTip: 'React',
+        url: reactImg,
+        alt: 'react image'
     },
 ]
 

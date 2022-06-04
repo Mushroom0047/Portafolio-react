@@ -36,9 +36,6 @@ const Projects = () => {
   const setMoreItems = () => {
     setVisible((prevValue) => prevValue+3);
   }
-
-
-
   return (
     <>
         <Header />

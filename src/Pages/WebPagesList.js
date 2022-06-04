@@ -1,6 +1,6 @@
 /*Import images */
 import img0 from '../img/pages/armag.webp';
-import img1 from '../img/pages/eppSeguridad.webp';
+// import img1 from '../img/pages/eppSeguridad.webp';
 import img2 from '../img/pages/isuda.webp';
 import img3 from '../img/pages/lastarria.webp';
 import img4 from '../img/pages/linna.webp';
@@ -16,7 +16,7 @@ const data = [
     {
       name: 'Cantauria Estudio',
       link: 'https://cantauriaestudio.cl/',
-      desc: 'Sitio web para estudio de tatuajes, desarrollado con Wordpress y Elementor',
+      desc: 'Sitio web para estudio de tatuajes, diseñado con FIGMA y desarrollado con Wordpress/Elementor',
       img: img11
     },
     {

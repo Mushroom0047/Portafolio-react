@@ -4,7 +4,7 @@ import Proptypes from 'prop-types';
 import ReactTypingEffect from 'react-typing-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import {Container} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 
 const rrssLinks = {
   ig: 'https://www.instagram.com/mushroom.47/',

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Placeholder, Row } from 'react-bootstrap'
 import ProjectTemplate from './ProjectTemplate';
 import dataProjects from './DataProjects';
 
