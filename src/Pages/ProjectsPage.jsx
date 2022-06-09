@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../Components/Banner/Banner';
 import GearAnim from '../Components/GearAnim/GearAnim';
 import Header from '../Components/Header/Header';
@@ -9,15 +9,22 @@ import Footer from '../Components/Footer/Footer';
 import '../Pages/projects.scss';
 import dataWebs from './WebPagesList';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import GamesProjects from '../Components/ProjectsJS/GamesProjects';
+import axios from 'axios';
 
-const linkGames = 'https://itch.io/profile/hvgamestudio';
-const linkItch = [
-  "https://hvgamestudio.itch.io/humanity-part-i",
-  "https://hvgamestudio.itch.io/cachipun",
-  "https://hvgamestudio.itch.io/zombeast-underattack"
-]
+//AXIOS SHIT
+const token = 'E0oFtREM3aZS6n8L9zdmsgvHqeoijHhcR3VcXWWf';
+const URL_itchio = `https://itch.io/api/1/E0oFtREM3aZS6n8L9zdmsgvHqeoijHhcR3VcXWWf/me`;
 
 const Projects = () => {
+  useEffect(() => {
+    fetch(URL_itchio)
+    .then(res=>res.json())
+    .then(data =>console.log(data))
+    .catch(err=>console.log(err))
+  }, [])
+  
+
   //Fill items in webpages
   let webItems = dataWebs.map(({name, desc, link, img}, index) => {
     return <WebTemplate
@@ -80,15 +87,19 @@ const Projects = () => {
                 Estos juegos son sencillos pero me permitieron aprender e 
                 iniciarme en el mundo de la programación. Estos fueron creados 
                 con la herramienta Game Maker Studio 2 y son totalmente gratis.<br/>
-                Puedes revisarlos en mi página de <a className='link-warning' href={linkGames} target='_blank'>Itch.io</a>
+                Puedes revisarlos en mi página de <a className='link-warning' href='https://itch.io/profile/hvgamestudio' target='_blank'>Itch.io</a>
               </p>
               </Col>
             </Row>
             <Row>
-              <Col className='box__project__games__itchio'>              
-                {/* <iframe className="iframe-games" src="https://itch.io/embed/290990?dark=true" ><a href={linkItch[0]}>Humanity Part I (DEMO) by hv game studio</a></iframe>                
-                <iframe className="iframe-games" src="https://itch.io/embed/493334?dark=true" ><a href={linkItch[1]}>CACHIPUN by hv game studio</a></iframe>
-                <iframe className="iframe-games" src="https://itch.io/embed/363084?dark=true" ><a href={linkItch[2]}>ZomBeast UnderAttack by hv game studio</a></iframe> */}
+              <Col>              
+                <GamesProjects 
+                imageLink='asd'
+                title='Hola'
+                date='hola'
+                desc='asd'
+                link='asdsd'
+                />
               </Col>
             </Row>
           </Container>

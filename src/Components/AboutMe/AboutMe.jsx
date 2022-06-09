@@ -2,7 +2,7 @@ import React from 'react';
 import '../AboutMe/aboutMe.scss'
 import Experience from '../Experience/Experience';
 import imgProfile from '../../img/myPhoto.jpeg';
-import { Col, Container, Row, Tooltip } from 'react-bootstrap';
+import { Col, Container, Image, Row} from 'react-bootstrap';
 import ImagesKnow from './ImagesKnow';
 
 
@@ -46,13 +46,12 @@ const arrExp = ['Planificación de desarrollo web.',
                         <hr/>
                         {/* Listado de imagenes */}
                         <ImagesKnow />
-                        <Tooltip />
                     </div>        
                 </div>        
               </Col>
               <Col md={6} sm={12} >
                 <div className='box__profileImage'>
-                    <img className='img-fluid rounded my-5' alt='profile' src={imgProfile} />
+                    <Image src={imgProfile} rounded fluid alt='profile'/>
                 </div>
 
                 <div className='box__experience mt-2'>

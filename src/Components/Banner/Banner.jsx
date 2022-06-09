@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Banner/banner.scss'
-import Proptypes from 'prop-types';
 import ReactTypingEffect from 'react-typing-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons';

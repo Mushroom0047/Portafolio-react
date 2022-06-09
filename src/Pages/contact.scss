@@ -1,33 +1,25 @@
 @import '/src/Styles/variables.scss';
 
 .box__form__container{
-    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     $bg-image-contact;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
     margin:  0px auto 0px auto;
+    padding: 2% 10%;
     width: 100%;
 
 
     .box__form__form{
-        display: flex;
-        flex-flow: column nowrap;
-        margin: 10% 0;
-        width: 40%;
-
         form{
-            text-align: center;
+            text-align: left;
             font-family: $font-family-subtitle;
+            width: 100%;
 
             input{
-                padding: 10px 0;
                 margin: 30px 0;
-                width: 90%;
+                width: 100%;
                 background-color: rgba(0,0,0,0);
                 color: $white;
                 border: none;
@@ -38,6 +30,7 @@
                 }
                 &::placeholder{
                     color: $white;
+                    opacity: 0.2;
                 }
             }
             textarea{
@@ -48,26 +41,37 @@
                 font-family: $font-family-subtitle;
                 height: 150px;
                 margin: 30px 0;
-                padding: 10px 0;
                 resize: vertical;
-                width: 90%;    
+                width: 100%;    
                 &:focus{
                     outline: none;
                 }      
                 &::placeholder{
                     color: $white;
+                    opacity: 0.2;
                 }      
             }
             .box__form__form__buttons{
-                margin: 30px 0;        
-                text-align: center;
-
+                margin: 30px 0; 
                 button{
-                    margin: 0 20px;
-                }
-
-
+                    margin: 0px 10px;
+                }       
             }
         }
+    }
+}
+.div__rrss__contact{
+    display: flex;
+    flex-flow: column wrap;
+
+    a{
+        text-decoration: none;
+        font-family: $font-family-subtitle;
+        color: $white;
+    }
+    svg{
+        color: $yellow;
+        font-size: 24px;
+        padding: 0 50px 0 0;
     }
 }

@@ -1,5 +1,13 @@
 @import '/src/Styles/variables.scss';
 
+.box__profileImage{
+    margin: 0 auto;
+    max-width: 600px;
+    img{
+        -webkit-box-shadow: 8px 5px 17px 5px rgba(0,0,0,0.8); 
+        box-shadow: 8px 5px 17px 5px rgba(0,0,0,0.8);
+    }
+}
 .box__aboutme{
     .text__desc{
         background-color: $grey;   
