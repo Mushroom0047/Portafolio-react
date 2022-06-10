@@ -13,7 +13,7 @@ const ContactMe = () => {
     </Row>
     <Row>
       <Col className='text-center'>
-        <Button variant='outline-light'>CONTACTO</Button>
+        <Button variant='outline-light' href='/Contact'>CONTACTO</Button>
       </Col>
     </Row>
   </Container>
@@ -23,14 +23,3 @@ const ContactMe = () => {
 }
 
 export default ContactMe
-
-{/* <div className='box__contactme__container'>
-        <div className='box__contactme__title'>
-            <h2>Contáctame</h2>
-            <p>Si quieres saber más sobre mí o sobre mi trabajo, 
-                envíame un mensaje.</p>
-        </div>
-        <div className='box__contactme__button'>
-            <Button variant='outline-light' href='/Contact'>CONTACTO</Button>
-        </div>
-    </div> */}

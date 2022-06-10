@@ -5,7 +5,7 @@ import img2 from '../img/pages/isuda.webp';
 import img3 from '../img/pages/lastarria.webp';
 import img4 from '../img/pages/linna.webp';
 import img5 from '../img/pages/miami.webp';
-import img6 from '../img/pages/necesitoweb.webp';
+import img6 from '../img/pages/Necesitoweb.webp';
 import img7 from '../img/pages/refuerza.webp';
 import img8 from '../img/pages/sinDeudas.webp';
 import img9 from '../img/pages/cellzion.webp';
