@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Banner from '../Components/Banner/Banner';
-import GearAnim from '../Components/GearAnim/GearAnim';
 import Header from '../Components/Header/Header';
 import ProjectsJS from '../Components/ProjectsJS/ProjectsJS';
 import WebTemplate from '../Components/WebTemplate/WebTemplate';
@@ -10,19 +9,8 @@ import '../Pages/projects.scss';
 import dataWebs from './WebPagesList';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import GamesProjects from '../Components/ProjectsJS/GamesProjects';
-import axios from 'axios';
-
-//AXIOS SHIT
-const token = 'E0oFtREM3aZS6n8L9zdmsgvHqeoijHhcR3VcXWWf';
-const URL_itchio = `https://itch.io/api/1/E0oFtREM3aZS6n8L9zdmsgvHqeoijHhcR3VcXWWf/me`;
 
 const Projects = () => {
-  useEffect(() => {
-    fetch(URL_itchio)
-    .then(res=>res.json())
-    .then(data =>console.log(data))
-    .catch(err=>console.log(err))
-  }, [])
   
 
   //Fill items in webpages
@@ -37,17 +25,30 @@ const Projects = () => {
   
   
   //Set items in webpages
-  const [items, setItems] = useState(webItems);
-  const [visible, setVisible] = useState(3);
-
+  // const [items, setItems] = useState(webItems);
+  const [visible, setVisible] = useState(3); 
+  const [loadMorePagesName, setLoadMorePagesName] = useState('CARGAR MÁS');
+  
   const setMoreItems = () => {
-    setVisible((prevValue) => prevValue+3);
+    //Cambiar valor de texto
+    if(visible>webItems.length-3)setLoadMorePagesName('OCULTAR')
+    if(loadMorePagesName ==='OCULTAR')setLoadMorePagesName('CARGAR MÁS')
+
+    //Cambiar valor de paginas
+    if(visible <= webItems.length){
+      setVisible((prevValue) => prevValue+3);
+    }else{
+      setVisible(3);
+    }
   }
+  
   return (
     <>
         <Header />
-        <Banner title={['Proyectos']} subtitle='Algunas cosas en las que he trabajado'/>
-        {/* <GearAnim /> */}
+        <Banner 
+        title={['Proyectos']} 
+        subtitle='Algunas cosas en las que he trabajado'
+        gear={true}/>
         <Container className='mt-5'>
           <Row>
             <Col sm={12} md={12} lg={6}>
@@ -63,11 +64,11 @@ const Projects = () => {
             </Col>          
           </Row>
           <Row>                 
-                {items.slice(0, visible).map((item) => {
+                {webItems.slice(0, visible).map((item) => {
                   return item;                 
                 })}         
             <Col className='text-center' md={12}>
-                <Button variant='outline-warning' onClick={setMoreItems} className='mt-3'>CARGAR MÁS</Button>            
+                <Button variant='outline-warning' onClick={setMoreItems} className='mt-3'>{loadMorePagesName}</Button>            
             </Col>
           </Row>
           </Container>
@@ -92,14 +93,33 @@ const Projects = () => {
               </Col>
             </Row>
             <Row>
-              <Col>              
+              <Col sm={12} md={6} lg={4}>              
                 <GamesProjects 
-                imageLink='asd'
-                title='Hola'
-                date='hola'
-                desc='asd'
-                link='asdsd'
+                imageLink='https://img.itch.zone/aW1nLzI1NTE0ODkucG5n/315x250%23c/fFpjJp.png'
+                title='CACHIPUN'
+                date='Oct 05, 2019'
+                desc='hola a todo el mundo! este es un pequeño juego sobre piedra,  papel y tijeras llamado "CACHIPÚN"  espero les guste.
+                ¿puedes ganar más de 5 veces seguidas?'
+                link='https://hvgamestudio.itch.io/cachipun'
                 />
+              </Col>
+              <Col sm={12} md={6} lg={4}>
+                <GamesProjects 
+                  imageLink='https://img.itch.zone/aW1hZ2UvMjkwOTkwLzE0MzI3NjQucG5n/315x250%23c/%2FiefYr.png'
+                  title='Humanity Part I (DEMO)'
+                  date='Aug 17, 2018'
+                  desc='Un juego de aventuras donde acompañaremos a Frank, un humano creado genéticamente, a través de la misteriosa ciudad de Uxo, gobernada por un rey que tiene muchos secretos que contar'
+                  link='https://hvgamestudio.itch.io/humanity-part-i'
+                  />
+              </Col>
+              <Col sm={12} md={6} lg={4}>
+                <GamesProjects 
+                  imageLink='https://img.itch.zone/aW1nLzI3NTk4MzUucG5n/315x250%23c/FJ8fDX.png'
+                  title='Zombeast under attack'
+                  date='Jan 29, 2019'
+                  desc='es un simple juego de disparos hecho para aprender y desestresarse, los personajes son personas reales (compañeros de trabajo), tal vez no sea el juego del año, pero me ayudó a mejorar mis habilidades de programación.'
+                  link='https://hvgamestudio.itch.io/zombeast-underattack'
+                  />
               </Col>
             </Row>
           </Container>

@@ -7,7 +7,7 @@ const GamesProjects = ({imageLink, title, date, desc, link}) => {
         <Container>
             <Row>
                 <Col>
-                    <Card>
+                    <Card className='bg-dark'>
                         <Card.Img variant='top' src={imageLink}/>
                         <Card.Body>
                             <Card.Title>{title}</Card.Title>

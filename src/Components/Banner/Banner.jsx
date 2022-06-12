@@ -4,6 +4,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faGithubAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {Col, Container, Row} from 'react-bootstrap';
+import GearAnim from '../../Components/GearAnim/GearAnim';
 
 const rrssLinks = {
   ig: 'https://www.instagram.com/mushroom.47/',
@@ -11,7 +12,7 @@ const rrssLinks = {
   linkedin: 'https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m'
 }
 
- const Banner = ({staticTitle, title, subtitle}) => {
+ const Banner = ({staticTitle, title, subtitle, gear}) => {
   const {ig, github, linkedin} = rrssLinks;
 
   return (
@@ -24,6 +25,7 @@ const rrssLinks = {
       <div className='box__titles'>
         <h2><ReactTypingEffect staticText={staticTitle} text={title} eraseDelay={700} typingDelay={1000}/></h2>
         <h1>{subtitle}</h1>
+        {gear ? <GearAnim />: gear = false}
       </div>
     </Container>
   )

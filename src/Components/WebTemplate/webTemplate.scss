@@ -2,11 +2,14 @@
 
 .box__web__container{
     border: 2px solid $yellow;
+    background-color: #262525;
     border-radius: 15px;
+    box-shadow: 8px 8px 6px 0px rgba(0,0,0,0.42);
     min-height: 500px;
-    max-width: 400px;
-    margin: 10px;
+    max-width: 500px;
+    margin: 5px;
     padding: 5px;
+    -webkit-box-shadow: 8px 8px 6px 0px rgba(0,0,0,0.42); 
     
     .box__web__image{
         height: 300px;
